@@ -4,98 +4,124 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GoatseCoin Meme</title>
+<link rel="icon" href="bible.png" type="image/png"> <!-- Favicon set to bible.png -->
 <style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
   body {
     font-family: Courier, monospace;
-    background-color: #000;
-    color: #00ff00;
+    background-color: #001f3f; /* BIOS-like blue background */
+    color: #ffffff; /* White text */
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     margin: 0;
+    overflow: hidden; /* Prevents scrolling */
   }
   .container {
     display: flex;
-    width: 80%;
-    height: 80%;
-    border: 2px solid #00ff00;
-    padding: 20px;
-    background-color: #001f3f; /* Blue BIOS background */
-    color: #00ff00;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    color: #ffffff; /* White text */
+  }
+  .main-content {
+    display: flex;
+    flex: 1;
   }
   /* Left side - Bible */
   .left-side {
-    width: 45%;
+    width: 35%; /* Reduced width for a smaller Bible section */
     background-color: #222;
-    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-right: 2px solid #00ff00;
-    background-image: url('https://cdn.discordapp.com/attachments/1299112716618825820/1305344196168908841/holy-bible-cover.png?ex=6732b004&is=67315e84&hm=12916a171516210cdc4c8524bc21f774c2c7a1026def25df6e65f60c9da794b4&'); /* Use the bible.png image in the same folder */
+    border-right: 2px solid #ffffff; /* White border */
+    border-top: 2px solid #ffffff; /* White border */
+    border-left: 2px solid #ffffff; /* White border */
+    border-bottom: 2px solid #ffffff; /* White border */
+    background-image: url('https://cdn.discordapp.com/attachments/1299112716618825820/1305344196168908841/holy-bible-cover.png?ex=6732b004&is=67315e84&hm=12916a171516210cdc4c8524bc21f774c2c7a1026def25df6e65f60c9da794b4&');
     background-size: cover;
     background-position: center;
   }
   .bible-text {
-    padding: 15px;
+    padding: 20px;
     border-radius: 5px;
     text-align: center;
-    color: #94724f; /* Gold color to match "Holy Bible" text */
+    color: #d4af37; /* Gold color for the Bible text */
     font-size: 1.2em;
+    max-width: 80%;
   }
   /* Right side - BIOS text */
   .right-side {
-    width: 55%;
+    width: 65%; /* Increased width for the BIOS section */
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
   .bios-header {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #00ff00;
-    border: 1px solid #00ff00;
+    color: #ffffff; /* White text for BIOS header */
+    border: 1px solid #ffffff;
     padding: 10px;
     text-align: center;
+    width: fit-content;
   }
   .bios-body {
     font-size: 1em;
     margin-top: 20px;
-    text-align: center;
-    color: #00ff00;
+    color: #ffffff; /* White text */
   }
   .footer {
-    font-size: 0.8em;
-    color: #00ff00;
     text-align: center;
-    margin-top: 30px;
+    padding: 10px;
+  }
+  .footer p {
+    font-size: 0.8em;
+    color: #ffffff; /* White text */
+    margin-bottom: 10px;
+  }
+  .footer img {
+    width: auto;
+    max-width: 150px;
+    height: auto;
   }
 </style>
 </head>
 <body>
 
 <div class="container">
-  <!-- Left Side - Bible Quote -->
-  <div class="left-side">
-    <div class="bible-text">
-      <p><strong>In the beginning was the Goatse,</strong></p>
-      <p>and the Goatse was God,</p>
-      <p>and God was the Goatse</p>
+  <div class="main-content">
+    <!-- Left Side - Bible Quote -->
+    <div class="left-side">
+      <div class="bible-text">
+        <p><strong>In the beginning was the Goatse,</strong></p>
+        <p>and the Goatse was God,</p>
+        <p>and God was the Goatse</p>
+      </div>
+    </div>
+
+    <!-- Right Side - BIOS Screen -->
+    <div class="right-side">
+      <div class="bios-header">GOATSE BIOS 1.01</div>
+      <div class="bios-body">
+        <p>Press F7 to accept_chapter 1</p>
+      </div>
     </div>
   </div>
 
-  <!-- Right Side - BIOS Screen -->
-  <div class="right-side">
-    <div class="bios-header">GOATSE BIOS 1.01</div>
-    <div class="bios-body">
-      <p>Press F7 to accept_chapter 1</p>
-    </div>
-    <div class="footer">
-      <p>femboys for jesus · simpcoin coalition · ordained devs for life</p>
-    </div>
+  <!-- Footer with Femboy Meme -->
+  <div class="footer">
+    <p>femboys for jesus · simpcoin coalition · ordained devs for life</p>
+    <img src="https://cdn.discordapp.com/attachments/1299112716618825820/1305345185265352776/image_17.png?ex=6732b0f0&is=67315f70&hm=dbe332cbb3a60dc5dd30f4d4cf9307f0070be74d215d470e02a16a61324efba2&" alt="Femboy Meme">
   </div>
 </div>
 
